@@ -5,17 +5,10 @@ Hosting your code on GitHub allows you to collaborate with other developers, kee
 # 🔹 Git Remote
 The first step is to add the remote repository where your code will be hosted. Use the following command to add the remote repository to your local Git setup:
 
-
-COPY
-
-COPY
 git remote add <name> <repository URL>
 This command adds a new remote repository with the given name and URL. You can check the remote repository's URL using the following command:
 
 
-COPY
-
-COPY
 git remote -v
 This command lists all the remote repositories that are associated with your local repository.
 
@@ -31,9 +24,6 @@ Push the changes to the remote repository using git push.
 Here's the command to push your initial commit to the remote repository:
 
 
-COPY
-
-COPY
 git add .
 git commit -m "initial push for the repo"
 git push -u origin main
@@ -44,7 +34,7 @@ Open the terminal and type ssh-keygen -t rsa.
 
 Follow the prompts to generate a new SSH key pair.
 
-Copy the contents of the public key file (e.g. ~/.ssh/id_rsa.pub).
+the contents of the public key file (e.g. ~/.ssh/id_rsa.pub).
 
 Paste the contents of the public key into the GitHub SSH key field in your account settings.
 
@@ -55,9 +45,6 @@ There is a difference between cloning and forking a repository. When you clone a
 Creating a feature branch is a best practice that helps you build new features without disturbing the production branch (e.g. master/main). Here's how to create a new feature branch and merge it back into the main branch using Git:
 
 
-COPY
-
-COPY
 git checkout -b <branch-name>
 # do some work on the feature branch
 git checkout main
@@ -73,9 +60,6 @@ git cherry-pick: This command is used to merge one or more commits from one bran
 To see the commit history of a specific branch, use the following command:
 
 
-COPY
-
-COPY
 git log <branch-name> --oneline
 This command shows the commit history of the specified branch in a compact, one-line format.
 
