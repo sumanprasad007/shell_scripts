@@ -1,0 +1,324 @@
+Print the list of AWS S3:
+ 
+2023-02-15 13:44:29 codepipeline-us-east-1-350260443536
+2023-03-06 11:25:35 codepipeline-us-west-1-180098554102
+2023-02-21 13:43:45 dotnet-build-project
+2023-02-16 17:57:01 elasticbeanstalk-us-east-1-658291663963
+2023-03-06 11:13:02 elasticbeanstalk-us-west-1-658291663963
+2023-02-23 14:25:24 pipeline-artifacts-terraform-new
+2023-03-01 19:17:31 prasad-cicd-artifacts-bucket
+2023-02-23 12:34:21 terraform-aws-codepipeline
+2023-03-01 17:53:00 terraform-demo-prasad
+2023-02-03 12:11:33 website-destination
+2023-02-03 12:10:51 website-source-code
+Print the list of AWS EC2 instances:
+ 
+{
+    "Reservations": [
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-0557a15b87f6559cf",
+                    "InstanceId": "i-0d26b89c4782f75d4",
+                    "InstanceType": "t2.micro",
+                    "KeyName": "feb 2023 key pair",
+                    "LaunchTime": "2023-02-20T12:29:20+00:00",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "us-east-1a",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-172-31-14-107.ec2.internal",
+                    "PrivateIpAddress": "172.31.14.107",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 80,
+                        "Name": "stopped"
+                    },
+                    "StateTransitionReason": "User initiated (2023-02-20 12:47:09 GMT)",
+                    "SubnetId": "subnet-0cfa4a7cfdbbc1b84",
+                    "VpcId": "vpc-046d03be7e0606718",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2023-02-15T07:33:39+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-058eff2fb84b472cf"
+                            }
+                        }
+                    ],
+                    "ClientToken": "425cfc53-1bd5-4588-b8e6-39957f174beb",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::658291663963:instance-profile/ec2-for-codedeploy",
+                        "Id": "AIPAZSRJ5URNUPPIUEI4V"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2023-02-15T07:33:38+00:00",
+                                "AttachmentId": "eni-attach-09f52b96576832344",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "launch-wizard-5",
+                                    "GroupId": "sg-008bb923ba0fbd74b"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:f6:4b:ab:55:83",
+                            "NetworkInterfaceId": "eni-0d2f5817541366b33",
+                            "OwnerId": "658291663963",
+                            "PrivateDnsName": "ip-172-31-14-107.ec2.internal",
+                            "PrivateIpAddress": "172.31.14.107",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-172-31-14-107.ec2.internal",
+                                    "PrivateIpAddress": "172.31.14.107"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0cfa4a7cfdbbc1b84",
+                            "VpcId": "vpc-046d03be7e0606718",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "launch-wizard-5",
+                            "GroupId": "sg-008bb923ba0fbd74b"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "StateReason": {
+                        "Code": "Client.UserInitiatedShutdown",
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+                    },
+                    "Tags": [
+                        {
+                            "Key": "Name",
+                            "Value": "webserver-apache2"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 1
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2023-02-15T07:33:38+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": true,
+                        "EnableResourceNameDnsAAAARecord": false
+                    },
+                    "MaintenanceOptions": {
+                        "AutoRecovery": "default"
+                    }
+                }
+            ],
+            "OwnerId": "658291663963",
+            "ReservationId": "r-0854fb9182bf66073"
+        },
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-0557a15b87f6559cf",
+                    "InstanceId": "i-09a15c1ea70e90ae6",
+                    "InstanceType": "t2.micro",
+                    "KeyName": "feb 2023 key pair",
+                    "LaunchTime": "2023-02-28T07:15:53+00:00",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "us-east-1a",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-172-31-14-191.ec2.internal",
+                    "PrivateIpAddress": "172.31.14.191",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 80,
+                        "Name": "stopped"
+                    },
+                    "StateTransitionReason": "User initiated (2023-02-28 08:47:20 GMT)",
+                    "SubnetId": "subnet-0cfa4a7cfdbbc1b84",
+                    "VpcId": "vpc-046d03be7e0606718",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2023-02-24T12:51:02+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0f02d16ebb7409ff3"
+                            }
+                        }
+                    ],
+                    "ClientToken": "terraform-20230224125059003800000001",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::658291663963:instance-profile/jenkinsRoleForCodePipeline",
+                        "Id": "AIPAZSRJ5URN7BQCJDNTZ"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2023-02-24T12:51:01+00:00",
+                                "AttachmentId": "eni-attach-0c13aaa0c76f1f53b",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "mySecurityGroup",
+                                    "GroupId": "sg-093520c49cb3d3850"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:ea:da:4b:d0:41",
+                            "NetworkInterfaceId": "eni-07648e55d7a273621",
+                            "OwnerId": "658291663963",
+                            "PrivateDnsName": "ip-172-31-14-191.ec2.internal",
+                            "PrivateIpAddress": "172.31.14.191",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-172-31-14-191.ec2.internal",
+                                    "PrivateIpAddress": "172.31.14.191"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0cfa4a7cfdbbc1b84",
+                            "VpcId": "vpc-046d03be7e0606718",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "mySecurityGroup",
+                            "GroupId": "sg-093520c49cb3d3850"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "StateReason": {
+                        "Code": "Client.UserInitiatedShutdown",
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+                    },
+                    "Tags": [
+                        {
+                            "Key": "Name",
+                            "Value": "Jenkins"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 1
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2023-02-24T12:51:01+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": false,
+                        "EnableResourceNameDnsAAAARecord": false
+                    },
+                    "MaintenanceOptions": {
+                        "AutoRecovery": "default"
+                    }
+                }
+            ],
+            "OwnerId": "658291663963",
+            "ReservationId": "r-0d8519fc005036a59"
+        }
+    ]
+}
+Print the list of AWS Lambda Functions:
+ 
+{
+    "Functions": []
+}
+Print the list of AWS IAM users:
+ 
+{
+    "Users": [
+        {
+            "Path": "/",
+            "UserName": "suman",
+            "UserId": "AIDAZSRJ5URNYRMRQWQXO",
+            "Arn": "arn:aws:iam::658291663963:user/suman",
+            "CreateDate": "2023-02-03T06:23:51+00:00",
+            "PasswordLastUsed": "2023-03-13T05:39:15+00:00"
+        }
+    ]
+}
