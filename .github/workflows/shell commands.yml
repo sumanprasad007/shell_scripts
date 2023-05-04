@@ -18,12 +18,14 @@ jobs:
           print(platform.processor())
         shell: python
 
-  run-windows-commands:
+  run-windows-command:
     runs-on: windows-latest
     steps: 
       - name: Directory Powreshell
         run: Get-Location
       
       - name: Directory Bash
-        run: pwd
+        run: |
+          pwd
+          echo "Successfully, executed the Bash commands"
         shell: bash
