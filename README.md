@@ -1,4 +1,5 @@
 # Shell Script
+
 A shell script is a computer program designed to be run by the Unix/Linux shell, a command-line interpreter. It is a set of commands that are executed in sequence. Shell scripts allow you to automate repetitive tasks, perform system administration tasks, and create simple utilities.
 
 # Getting Started
